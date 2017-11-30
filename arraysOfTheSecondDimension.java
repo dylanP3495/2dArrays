@@ -15,9 +15,11 @@ public class arraysOfTheSecondDimension
         twoDimensionalArray = new int [5][10];
         // Two dimensional  Arrays are ALWAYS in 
         //row-major format.
+        int num = 0;
         for (int row = 0; row < twoDimensionalArray.length; row++){
             for (int col = 0; col < twoDimensionalArray[0].length; col++){
-                
+                twoDimensionalArray[row][col] = num;
+                num++;
             }
         }
     }
